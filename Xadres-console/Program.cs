@@ -1,5 +1,6 @@
 ﻿using System;
 using tabuleiro;
+using xadrez;
 
 namespace Xadres_console
 {
@@ -7,14 +8,12 @@ namespace Xadres_console
     {
         static void Main(string[] args)
         {
-            //Posicao p = new Posicao(3, 4);
+            posicaoXadrez pos = new posicaoXadrez('a', 1);
 
-            Tabuleiro tab = new Tabuleiro(20, 20);
+            Console.WriteLine(pos);
 
-            Tela.imprimirTabuleiro(tab);
+            Console.WriteLine(pos.toPosicao());
 
-            Console.WriteLine();
-            
         }
     }
 }
